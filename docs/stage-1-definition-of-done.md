@@ -8,7 +8,7 @@ Stage 1 establishes the local foundation of the AI Knowledge Platform.
 The application must be able to accept a PDF document through a REST API, store the original file locally, extract its text, split the text into chunks, and persist the document metadata and chunks in PostgreSQL.
 
 No AI, embeddings, vector search, AWS, Docker, or asynchronous processing is required for Stage 1.
-
+````
 ---
 
 # 1. Project Setup
