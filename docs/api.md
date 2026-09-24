@@ -1,4 +1,3 @@
-````md id="48317"
 # API Contract
 
 ## Overview
@@ -9,6 +8,7 @@ All endpoints are exposed under the `/documents` resource.
 
 Stage 1 uses synchronous document processing.
 
+```text
 Client
    │
    ▼
