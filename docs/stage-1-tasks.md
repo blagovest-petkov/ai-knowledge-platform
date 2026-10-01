@@ -38,35 +38,35 @@ Stage 1 does **not** include:
 
 ## 1.1 Create Spring Boot project
 
-- [ ] Create Spring Boot project
-- [ ] Use Java 21
-- [ ] Use Maven
-- [ ] Use JAR packaging
-- [ ] Choose project name: `ai-knowledge-platform`
+- [x] Create Spring Boot project
+- [x] Use Java 21
+- [x] Use Maven
+- [x] Use JAR packaging
+- [x] Choose project name: `ai-knowledge-platform`
 
 ## 1.2 Configure Java
 
-- [ ] Configure Java 21
-- [ ] Verify Maven uses Java 21
-- [ ] Verify IntelliJ uses Java 21
+- [x] Configure Java 21
+- [x] Verify Maven uses Java 21
+- [x] Verify IntelliJ uses Java 21
 
 ## 1.3 Configure Maven dependencies
 
 Required dependencies:
 
-- [ ] Spring Web
-- [ ] Spring Data JPA
-- [ ] PostgreSQL Driver
-- [ ] Flyway
-- [ ] Validation
-- [ ] JUnit 5
-- [ ] Mockito
+- [x] Spring Web
+- [x] Spring Data JPA
+- [x] PostgreSQL Driver
+- [x] Flyway
+- [x] Validation
+- [x] JUnit 5
+- [x] Mockito
 
 ## 1.4 Configure application
 
-- [ ] Create `application.yml`
-- [ ] Configure application name
-- [ ] Configure PostgreSQL connection
+- [x] Create `application.yml`
+- [x] Configure application name
+- [x] Configure PostgreSQL connection
 - [ ] Configure JPA
 - [ ] Configure Flyway
 - [ ] Configure local document storage path
