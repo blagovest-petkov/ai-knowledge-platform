@@ -67,8 +67,8 @@ Required dependencies:
 - [x] Create `application.yml`
 - [x] Configure application name
 - [x] Configure PostgreSQL connection
-- [ ] Configure JPA
-- [ ] Configure Flyway
+- [X] Configure JPA
+- [x] Configure Flyway
 - [ ] Configure local document storage path
 - [ ] Keep environment-specific values externalizable
 - [ ] Do not commit passwords or secrets
