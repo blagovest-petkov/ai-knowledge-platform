@@ -69,15 +69,15 @@ Required dependencies:
 - [x] Configure PostgreSQL connection
 - [X] Configure JPA
 - [x] Configure Flyway
-- [ ] Configure local document storage path
-- [ ] Keep environment-specific values externalizable
-- [ ] Do not commit passwords or secrets
+- [x] Configure local document storage path
+- [x] Keep environment-specific values externalizable
+- [x] Do not commit passwords or secrets
 
 ## 1.5 Verify application starts
 
-- [ ] Start Spring Boot application
-- [ ] Verify application starts without errors
-- [ ] Verify database connection configuration
+- [x] Start Spring Boot application
+- [x] Verify application starts without errors
+- [x] Verify database connection configuration
 - [ ] Verify Flyway starts correctly
 
 ## 1.6 Create initial project structure
@@ -102,9 +102,9 @@ question/
 common/
 ````
 
-* [ ] Create package structure
-* [ ] Keep business logic inside the appropriate domain
-* [ ] Avoid global `controller/service/repository` packages
+* [x] Create package structure
+* [x] Keep business logic inside the appropriate domain
+* [x] Avoid global `controller/service/repository` packages
 
 ## 1.7 Initial Git commit
 
@@ -119,16 +119,16 @@ common/
 
 ## 2.1 Set up local PostgreSQL
 
-* [ ] Install PostgreSQL if necessary
-* [ ] Create local database
-* [ ] Create local database user
-* [ ] Verify connection
+* [x] Install PostgreSQL if necessary
+* [x] Create local database
+* [x] Create local database user
+* [x] Verify connection
 
 ## 2.2 Configure Flyway
 
-* [ ] Add Flyway dependency
-* [ ] Create migrations directory
-* [ ] Configure Flyway
+* [x] Add Flyway dependency
+* [x] Create migrations directory
+* [x] Configure Flyway
 * [ ] Verify migrations execute automatically
 
 ## 2.3 Create `documents` migration
