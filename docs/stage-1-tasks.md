@@ -108,10 +108,10 @@ common/
 
 ## 1.7 Initial Git commit
 
-* [ ] Verify `.gitignore`
-* [ ] Add project files
-* [ ] Commit initial project
-* [ ] Push to GitHub
+* [x] Verify `.gitignore`
+* [x] Add project files
+* [x] Commit initial project
+* [x] Push to GitHub
 
 ---
 
