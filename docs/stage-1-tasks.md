@@ -160,11 +160,11 @@ Statuses:
 
 * `FAILED`
 
-* [ ] Create migration
+* [x] Create migration
 
-* [ ] Run migration
+* [x] Run migration
 
-* [ ] Verify table
+* [x] Verify table
 
 ## 2.4 Create `document_chunks` migration
 
