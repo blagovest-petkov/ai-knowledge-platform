@@ -155,6 +155,15 @@ document B
 
 The same `chunk_index` can therefore exist across different documents.
 
+## Check Constraint
+
+`chunk_index` is zero-based, so negative values are rejected:
+
+```sql
+CONSTRAINT ck_document_chunks_chunk_index_non_negative
+    CHECK (chunk_index >= 0)
+```
+
 ---
 
 # Database Diagram
@@ -217,7 +226,10 @@ CREATE TABLE document_chunks (
         ON DELETE CASCADE,
 
     CONSTRAINT uq_document_chunk_index
-        UNIQUE (document_id, chunk_index)
+        UNIQUE (document_id, chunk_index),
+
+    CONSTRAINT ck_document_chunks_chunk_index_non_negative
+        CHECK (chunk_index >= 0)
 );
 ```
 

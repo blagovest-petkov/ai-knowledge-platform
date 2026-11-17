@@ -78,7 +78,7 @@ Required dependencies:
 - [x] Start Spring Boot application
 - [x] Verify application starts without errors
 - [x] Verify database connection configuration
-- [ ] Verify Flyway starts correctly
+- [x] Verify Flyway starts correctly
 
 ## 1.6 Create initial project structure
 
@@ -129,7 +129,7 @@ common/
 * [x] Add Flyway dependency
 * [x] Create migrations directory
 * [x] Configure Flyway
-* [ ] Verify migrations execute automatically
+* [x] Verify migrations execute automatically
 
 ## 2.3 Create `documents` migration
 
@@ -184,9 +184,9 @@ Fields:
 
 Constraints:
 
-* [ ] Foreign key to `documents`
-* [ ] `ON DELETE CASCADE`
-* [ ] Unique `(document_id, chunk_index)`
+* [x] Foreign key to `documents`
+* [x] `ON DELETE CASCADE`
+* [x] Unique `(document_id, chunk_index)`
 
 ## 2.5 Verify database schema
 

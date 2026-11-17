@@ -17,14 +17,46 @@ Implementation should match these docs. If the code has to diverge from them, up
 ## Commands
 
 ```bash
-./mvnw spring-boot:run                     # run the app (needs local PostgreSQL)
-./mvnw clean package                       # build + run tests
-./mvnw test                                # all tests
-./mvnw test -Dtest=ClassName               # single test class
-./mvnw test -Dtest=ClassName#methodName    # single test method
+./mvnw spring-boot:run                         # run the app (needs local PostgreSQL)
+./mvnw clean package                           # build + run tests
+./mvnw test                                    # all tests
+./mvnw test -Dtest=ClassName                   # single test class
+./mvnw test -Dtest=ClassName#methodName        # single test method
+./mvnw spotless:apply                          # Formatting
+./mvnw spotless:check                          # Formatting verification
+./mvnw verify                                  # Compilation and tests
+sqlfluff lint src/main/resources/db/migration/ # Check migrations
+sqlfluff fix src/main/resources/db/migration/  # Format/fix migrations
 ```
 
-There is no linter or formatter configured.
+## Java and SQL Code Quality
+
+### Java
+- Use Java 21.
+- Follow Google Java Format, AOSP style (4-space indentation).
+- Never manually override the Spotless formatting conventions.
+- Remove unused imports.
+- Follow existing Spring Boot architecture and conventions.
+
+### PostgreSQL
+- Use PostgreSQL-compatible SQL.
+- Follow the project's SQLFluff configuration.
+- SQL keywords must be uppercase.
+- Identifiers should be lowercase.
+- Use Flyway for database schema changes.
+- Never modify an existing Flyway migration.
+- Create a new migration for schema changes.
+- Never run automatic SQL fixes without reviewing the diff.
+
+### Before Completing a Task
+
+1. Run Spotless on modified Java files.
+2. Run SQLFluff on modified SQL files.
+3. Run Maven compilation and relevant tests.
+4. Review the final Git diff.
+5. Report any checks that couldn't be executed.
+
+Never claim that a check passed without executing it.
 
 ## Local environment
 
