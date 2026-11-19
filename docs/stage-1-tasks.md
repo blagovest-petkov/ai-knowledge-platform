@@ -190,30 +190,30 @@ Constraints:
 
 ## 2.5 Verify database schema
 
-* [ ] Verify `documents`
-* [ ] Verify `document_chunks`
-* [ ] Verify primary keys
-* [ ] Verify foreign key
-* [ ] Verify cascade delete
-* [ ] Verify unique constraint
+* [x] Verify `documents`
+* [x] Verify `document_chunks`
+* [x] Verify primary keys
+* [x] Verify foreign key
+* [x] Verify cascade delete
+* [x] Verify unique constraint
 
 ## 2.6 Create `Document` entity
 
-* [ ] Create entity
-* [ ] Map UUID ID
-* [ ] Map all database fields
-* [ ] Add status enum
-* [ ] Map timestamps
+* [x] Create entity
+* [x] Map UUID ID
+* [x] Map all database fields
+* [x] Add status enum
+* [x] Map timestamps
 
 ## 2.7 Create `DocumentChunk` entity
 
-* [ ] Create entity
-* [ ] Map UUID ID
-* [ ] Map `document_id`
-* [ ] Map `chunk_index`
-* [ ] Map `content`
-* [ ] Map timestamp
-* [ ] Configure relationship to `Document`
+* [x] Create entity
+* [x] Map UUID ID
+* [x] Map `document_id`
+* [x] Map `chunk_index`
+* [x] Map `content`
+* [x] Map timestamp
+* [x] Configure relationship to `Document`
 
 ## 2.8 Create `DocumentRepository`
 
