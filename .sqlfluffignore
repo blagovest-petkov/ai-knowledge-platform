@@ -1,0 +1,3 @@
+# Applied Flyway migrations predating the SQLFluff config. They must not be edited,
+# so they are excluded from linting. New migrations are still linted.
+src/main/resources/db/migration/V1__create_statuses_and_documents.sql
